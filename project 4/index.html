@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Account</title>
+  <link rel="stylesheet" href="asset/css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="cta">CITE</h2>
+    <form id="registerForm" action="submit.php" method="POST" target="_blank" class="form-box">
+  <h1>Student Registration</h1>
+
+  <label for="firstName">Firstname</label>
+  <input type="text" id="firstName" name="firstName" placeholder="Firstname" required />
+
+  <label for="middleName">Middlename</label>
+  <input type="text" id="middleName" name="middleName" placeholder="Middlename" />
+
+  <label for="lastname">Lastname</label>
+  <input type="text" id="lastname" name="lastname" placeholder="Lastname" required />
+
+  <label for="suffix">Suffix</label>
+  <input type="text" id="suffix" name="suffix" placeholder="Suffix" />
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+  <label for="phone">Contact Number</label>
+  <input type="tel" id="phone" name="phone" pattern="^(?:\+63|0)\d{10}$" placeholder="Contact number" required />
+
+  <label for="idNumber">ID Number</label>
+  <input type="text" id="idNumber" name="idNumber" pattern="^\d{4}-\d{2}-\d{3}$" placeholder="ID Number" required />
+
+  <label for="Batch">Batch</label>
+  <select id="Batch" name="Batch" required>
+    <option value="">Select Batch</option>
+    <option value="B33">B33</option>
+    <option value="B34">B34</option>
+    <option value="B35">B35</option>
+  </select>
+
+  <label for="Technology">Technology</label>
+  <select id="Technology" name="Technology" required>
+    <option value="">Select Technology</option>
+    <option value="Computer Engineering Technology">Computer Engineering Technology</option>
+    <option value="Mechanical Engineering Technology">Mechanical Engineering Technology</option>
+    <option value="Electrical Engineering Technology">Electrical Engineering Technology</option>
+    <option value="Electronics Engineering Technology">Electronics Engineering Technology</option>
+  </select>
+
+  <label class="checkbox">
+    <input type="checkbox" name="terms" required />
+    I agree to Terms of Service & Privacy Policy
+  </label>
+
+  <button type="submit" class="register-btn">Submit</button>
+</form>
+
+
+    <footer>Designed by JLA</footer>
+  </div>
+
+  <script src="asset/js/script.js"></script>
+</body>
+
+</html>
