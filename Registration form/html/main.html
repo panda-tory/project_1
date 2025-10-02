@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+      <header>
+        <h1>Student Registration Portal</h1>
+        <p class="subtitle">Register for the upcoming academic semester</p>
+    </header>
+    
+    <main>
+        <section class="registration-card">
+            <div class="card-header">
+                <h2>Registration Form</h2>
+            </div>
+            
+            <div class="card-body">
+                <form id="registrationForm">
+                    <fieldset class="form-section">
+                        <legend class="form-section-title">Personal Information</legend>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName" class="required">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+                                <p class="error-message" id="firstNameError">Please enter a valid first name (min 2 characters)</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName" class="required">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+                                <p class="error-message" id="lastNameError">Please enter a valid last name (min 2 characters)</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="middleName">Middle Name</label>
+                                <input type="text" id="middleName" name="middleName" placeholder="Enter your middle name">
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="form-section">
+                        <legend class="form-section-title">Academic Information</legend>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="required">Department</label>
+                                <div class="radio-group">
+                                    <div class="radio-option">
+                                        <input type="radio" id="deptComputer" name="department" value="Computer">
+                                        <label for="deptComputer">Computer</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="deptMechanical" name="department" value="Mechanical">
+                                        <label for="deptMechanical">Mechanical</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="deptElectrical" name="department" value="Electrical">
+                                        <label for="deptElectrical">Electrical</label>
+                                    </div>
+                                    <div class="radio-option">
+                                        <input type="radio" id="deptElectronics" name="department" value="Electronics">
+                                        <label for="deptElectronics">Electronics</label>
+                                    </div>
+                                </div>
+                                <p class="error-message" id="departmentError">Please select a department</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="section" class="required">Section</label>
+                                <input type="text" id="section" name="section" placeholder="e.g., A, B, C">
+                                <p class="error-message" id="sectionError">Please enter your section</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="batch" class="required">Batch Number</label>
+                                <div class="batch-input-container">
+                                    <input type="text" id="batch" name="batch" placeholder="1-99" maxlength="2" inputmode="numeric">
+                                </div>
+                                <p class="error-message" id="batchError">Please enter a valid batch between 1-99</p>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="form-actions">
+                        <button type="submit">Register Now</button>
+                    </div>
+                    
+                    <div class="success-message" id="successMessage">
+                        Registration successful! Thank you for registering.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; All rights reserved.</p>
+    </footer>
+<script src="/js/script.js"></script>
+</body>
+</html>
